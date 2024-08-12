@@ -1,397 +1,564 @@
 body {
-    margin: 0 auto;
+    margin: auto;
     padding: 0 auto;
-    background-color: white;
-    color: black;
-}
-
-* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.barre_entete {
-    background-color: rgb(206, 67, 118);
-    padding: 15px;
+header {
+    width: 95%;
+    margin: auto;
 }
 
-.barre_entete h1 {
-    font-size: small;
-    color: white;
-    font-family: "Playwrite AU VIC", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
+.content_box1 {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
 }
 
-.barre_entete a {
-    text-decoration: none;
-}
-
-.barre_entete a img {
+.content_box1a img {
     width: 100px;
+    object-fit: cover;
+}
+
+.content_box1b ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.content_box1b ul li {
+    display: inline-block;
+}
+
+.list {
+    padding-right: 70px;
+}
+
+.content_box1b ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
     transition: 0.5s;
 }
 
-.barre_entete a img:hover {
-    width: 110px;
+.content_box1b ul li a:hover {
+    font-weight: bold;
+    transition: 0.5s;
 }
 
-.Link_barrre {
-    float: right;
+.Sing {
+    border: 1px solid violet;
+    padding: 3px;
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
-/*********************************************header caroussel***********************************/
-header {
-    text-align: center;
-    padding: 50px;
-    padding-bottom: 100px;
-    overflow: hidden;
-    background-image: url("album/fond.jpg");
-    background: linear-gradient(to bottom, transparent, mistyrose), url("album/fond.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    word-wrap: break-word;
-    background-position: center;
-}
-
-header h2 {
-    font-size: 60px;
+.Sing:hover {
     color: white;
-    padding-top: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-family: "Archivo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-        "wdth"100;
+    font-weight: normal;
+    border: none;
+    background: black;
+    transition: 0.5s;
 }
 
-header p {
-    color: rgb(206, 67, 118);
-    font-family: "Playwrite AU VIC", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
+.content_box1c {
+    display: none;
 }
 
-header h3 {
+.open_menu {
+    cursor: pointer;
+    padding: 20px;
+    transition: ease 0.5s;
+    display: none;
+    display: block;
+}
+
+.close_menu_js_effet {
+    display: none;
+    transition: 0.5s;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    background: linear-gradient(#c97efd, #f46c9b);
+    z-index: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.navbarr_Js {
+    right: 0px;
+    transition: ease-in-out 0.5s;
+}
+
+nav ul {
+    padding-top: 40px;
+    position: relative;
+    right: 25px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s
+}
+
+nav ul li a:hover {
+    letter-spacing: 5px;
+}
+
+.close_menu {
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    padding: 20px;
     color: white;
     font-size: 30px;
+    transition: ease 0.5s;
+}
+
+.close_menu:hover {
+    font-size: 35px;
+    transition: ease 0.5s;
+}
+
+/*****************************************************main*****************************/
+main {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div {
+    flex-basis: 50%;
+    box-sizing: content-box;
+}
+
+.main_First {
+    padding-left: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header a {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    color: white;
-    transition: ease-in-out 0.5s;
+.main_First h1 {
+    font-size: 50px;
 }
 
-header a:hover {
-    letter-spacing: 2px;
+.main_First p {
+    font-size: large;
+    color: black;
 }
 
-/******************************main*************************/
-main {
-    margin: 0 auto;
-    width: 95%;
-    margin-top: 50px;
-    padding: 10px;
-}
-
-main h2,
-h6 {
+.main_second {
     text-align: center;
-    text-transform: uppercase;
 }
 
-main h2 {
-    font-family: "Archivo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-        "wdth"100;
+.main_second {
+    height: 500px;
 }
 
-main h6 {
-    color: rgb(206, 67, 118);
-}
-
-/********************************section********************************************/
-section {
-    margin: 0 auto;
-    width: 95%;
-    margin-top: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-section div {
-    flex-basis: 45%;
-
-}
-
-section div h4 {
-    color: rgb(206, 67, 118);
-}
-
-.sectionDiv2 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.sectionDiv2 div {
-    flex-basis: 49%;
-    margin-top: 20px;
-}
-
-.sectionDiv2 div img {
+.main_second img {
     width: 100%;
-    height: 200px;
-    transition: ease-in-out 0.5s;
-    animation: AnimImage 1s alternate infinite;
+    height: 100%;
+    object-fit: cover;
 }
 
-@keyframes AnimImage {
-    from {
-        rotate: 5deg;
-    }
-
-    to {
-        rotate: 0deg;
-    }
+/*************************************************barre***************************************/
+.barre {
+    margin-top: 0px;
+    padding: 20px;
+    background: linear-gradient(#c97efd, #f46c9b);
 }
 
-.sectionDiv2 div {
+/*********************************************recherche*****************************************/
+.recherche {
     text-align: center;
 }
 
-.sectionDiv2 div h6 {
-    text-transform: lowercase;
-    font-weight: bold;
-}
-
-/**************************article********************************/
-article {
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-article div {
-    flex-basis: 20%;
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px gainsboro;
-    transition: ease-in-out all 0.5s;
-}
-
-article div:hover {
-    position: relative;
-    bottom: 10px;
-    cursor: pointer;
-}
-
-article div h4 {
-    font-size: small;
-    color: gray;
-}
-
-/***************************contactez-nous-----------------*/
-.contact {
-    margin: 0 auto;
-    margin-top: 150px;
-    width: 90%;
-}
-
-.contact h3 {
-    text-align: center;
-    text-transform: uppercase;
+.recherche h3 {
     font-size: 30px;
 }
 
-.contactTitre {
-    border-bottom: 4px solid rgb(206, 67, 118);
-
+.recherche input {
+    width: 250px;
 }
 
-.conta {
-    color: rgb(206, 67, 118);
+.recherche input::-webkit-input-placeholder {
+    opacity: 0.4;
+    padding: 5px;
 }
 
-.contact h6 {
-    text-align: center;
-    text-transform: lowercase;
+.recherche button {
+    border: none;
+    color: white;
+    background: linear-gradient(#c97efd, #f46c9b);
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.formulaire {
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 60%;
-    box-shadow: 0px 0px 10px whitesmoke;
-    text-align: center;
-    padding: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: rgb(236, 229, 229);
-    border-radius: 10px;
-}
-
-.formulaire form {
-    width: 90%;
+/*************************************section********************************/
+section {
     margin: auto;
-    text-align: center;
+    margin-top: 50px;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.formulaire form input {
-    padding: 10px;
-    width: 100%;
-    height: 30px;
-    outline-color: rgb(206, 67, 118);
-    border: none;
-    border-radius: 5px;
+section div {
+    flex-basis: 47%;
 }
 
-.formulaire form input::placeholder {
-    opacity: 0.3;
-}
-
-.formulaire form textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    outline-color: rgb(206, 67, 118);
-    border-radius: 5px;
-    border: none;
-}
-
-.formulaire form textarea::placeholder {
-    opacity: 0.3;
-}
-
-.formulaire form button {
-    background-color: rgb(206, 67, 118);
-    border: none;
-    color: white;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 5px;
-    transition: ease-in-out 0.5s;
-    box-shadow: 0px 0px 10px gainsboro;
-}
-
-.formulaire form button:hover {
-    cursor: pointer;
-    letter-spacing: 2px;
-    font-weight: bold;
-
-}
-
-/*******************************footer****************************************/
-footer {
-    margin-top: 200px;
-    background-color: #010101;
-    padding: 20px;
-    color: white;
-}
-
-.footerContenaire {
+.section1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.footerContenaire div {
-    margin-top: 20px;
-    flex-basis: 20%;
+.section1 div {
+    margin-top: 10px;
+    flex-basis: 40%;
+    height: 250px;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
-.footerContenaire div h4 {
-    text-transform: uppercase;
-    color: rgb(206, 67, 118);
+.section1 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.footerContenaire div ul {
-    list-style-type: none;
+.rose {
+    background-color: #ef729d;
 }
 
-.footerContenaire div ul li {
-    display: inline-block;
-    padding: 5px;
-    transition: ease-in-out 0.5s;
+.violete {
+    background-color: #c97efd;
 }
 
-.footerContenaire div ul li:hover {
-    padding: 7px;
+/*******************************/
+.section2 {
+    text-align: center;
 }
 
-.footerContenaire div ul li a {
-    text-decoration: none;
+.section2 h3 {
+    text-align: left;
+    font-size: 30px;
+}
+
+.section2 p {
+    color: black;
+}
+
+.real {
+    color: #f46c9b;
+}
+
+.section2 img {
+    width: 50px;
+    object-fit: cover;
+}
+
+/*******************************article**************************************/
+article {
+    margin: auto;
+    margin-top: 100px;
+    background: linear-gradient(to right, #c97efd, #ef729d);
+}
+
+article h3 {
+    padding-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+article p {
+    text-align: center;
+    color: white;
+}
+
+.article_Cont {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.article_Cont div {
+    margin-top: 30px;
+    flex-basis: 25%;
+    padding: 10px;
     background-color: white;
-    padding: 5px;
+    color: black;
+    border-radius: 20px
 }
 
-@media screen and (max-width:1100px) {
+.article_Cont div .image {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.article_Cont div h5 {
+    text-transform: uppercase;
+}
+
+.article_Cont div h6 {
+    background-color: rgb(215, 211, 211);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.article_Cont div .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+}
+
+/***************************************liste************************************/
+.Teacher {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Teacher div {
+    flex-basis: 45%;
+}
+
+.Teacher div h4 {
+    font-size: 30px;
+}
+
+.roseColor {
+    color: #ef729d;
+}
+
+.Teacher div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/********************student**************************/
+.student {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ef729d, #c97efd);
+    padding-bottom: 70px;
+}
+
+.student h4,
+p {
+    color: white;
+}
+
+.student h4 {
+    font-size: 30px;
+}
+
+.contenaire_student {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenaire_student div {
+    margin-top: 20px;
+    padding: 10px;
+    flex-basis: 25%;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contenaire_student div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    bottom: 30px;
+}
+
+.contenaire_student div p {
+    font-size: small;
+    color: black;
+}
+
+/*************************login**************************/
+.login_box {
+    width: 95%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.login_box div {
+    flex-basis: 45%;
+}
+
+.login_image {
+    text-align: center;
+    background-image: url("gallerie/Develop_School_Login.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_image h5 {
+    color: white;
+    font-size: 25px;
+    padding-top: 50%;
+}
+
+.login_form h4 {
+    font-size: 30px;
+}
+
+.login_form p {
+    color: black;
+}
+
+.login_form form {
+    width: 70%;
+    margin: auto;
+}
+
+.login_form form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #c97efd;
+}
+
+.login_form form input::-webkit-input-placeholder {
+    text-align: center;
+    opacity: 0.4;
+}
+
+.Forget {
+    text-align: right;
+    color: #c97efd;
+}
+
+.login_form form button {
+    text-align: center;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #c97efd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*********************************************/
+@media screen and (max-width:750px) {
+    .content_box1b {
+        display: none;
+    }
+
+    .content_box1c {
+        display: block;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    main div {
+        flex-basis: 100%;
+    }
+
+    .main_First {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .main_First p {
+        font-size: medium;
+    }
 
     section {
-        margin-top: 30px;
+        flex-wrap: wrap;
     }
 
     section div {
-        flex-basis: 90%;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    article div {
-        flex-basis: 40%;
+        flex-basis: 100%;
     }
 
-    .formulaire {
+    .section1 div {
+        flex-basis: 45%;
+    }
+
+    .section2 {
+        margin-top: 20px;
+    }
+
+    .article_Cont {
+        padding-bottom: 150px;
+    }
+
+    .article_Cont div {
+        flex-basis: 80%;
+    }
+
+    .Teacher {
+        flex-wrap: wrap;
+    }
+
+    .Teacher div {
+        flex-basis: 100%;
+    }
+
+    .contenaire_student {
+        flex-wrap: wrap;
+    }
+
+    .contenaire_student div {
+        margin-top: 30px;
+        flex-basis: 100%;
+    }
+
+    .login_box {
+        flex-wrap: wrap;
+    }
+
+    .login_box div {
+        flex-basis: 100%;
+    }
+
+    .login_form form {
         width: 80%;
     }
 
-    .footerContenaire div {
-        flex-basis: 50%;
-    }
-}
-
-@media screen and (max-width:700px) {
-    header {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .sectionDiv2 div {
-        flex-basis: 100%;
-    }
-
-    .sectionDiv2 div img {
-        animation: none;
-        border-radius: 10px;
-        box-shadow: 0px 0px 5px gainsboro;
-    }
-
-    article div {
-        flex-basis: 100%;
-    }
-
-    .formulaire {
-        width: 90%;
-    }
-
-    .footerContenaire div {
-        flex-basis: 100%;
+    .login_form form input {
+        width: 100%;
     }
 }
