@@ -37,6 +37,9 @@ header {
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     transition: 0.5s;
 }
 
@@ -105,9 +108,11 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     transition: ease-in-out 0.5s
 }
 
@@ -149,12 +154,18 @@ main div {
 }
 
 .main_First h1 {
-    font-size: 50px;
+    font-size: 70px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .main_First p {
     font-size: large;
     color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .main_second {
@@ -185,6 +196,9 @@ main div {
 
 .recherche h3 {
     font-size: 30px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .recherche input {
@@ -193,6 +207,9 @@ main div {
     border: 2px solid #c97efd;
     border-radius: 5px;
     outline-color: #ef729d;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .recherche input::-webkit-input-placeholder {
@@ -259,11 +276,17 @@ section div {
 
 .section2 h3 {
     text-align: left;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .section2 p {
     color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .real {
@@ -287,11 +310,17 @@ article h3 {
     font-size: 25px;
     text-align: center;
     color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 article p {
     text-align: center;
     color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .article_Cont {
@@ -321,12 +350,19 @@ article p {
 
 .article_Cont div h5 {
     text-transform: uppercase;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .article_Cont div h6 {
     background-color: rgb(215, 211, 211);
     padding: 5px;
     border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
 }
 
 .article_Cont div .avatar {
@@ -350,11 +386,21 @@ article p {
 }
 
 .Teacher div h4 {
-    font-size: 30px;
+    font-size: 50px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .roseColor {
     color: #ef729d;
+}
+
+.Teacher div p {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .Teacher div img {
@@ -375,10 +421,28 @@ article p {
 .student h4,
 p {
     color: white;
+
+}
+
+.student p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .student h4 {
     font-size: 30px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.student h5 {
+    font-size: 20px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .contenaire_student {
@@ -444,10 +508,16 @@ p {
 
 .login_form h4 {
     font-size: 30px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .login_form .form_P {
     color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .login_form form {
@@ -461,6 +531,9 @@ p {
     border-radius: 10px;
     border: 2px solid #c97efd;
     outline-color: #ef729d;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .login_form form input::-webkit-input-placeholder {
@@ -471,6 +544,9 @@ p {
 .Forget {
     text-align: right;
     color: #c97efd;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .login_form form button {
@@ -485,12 +561,20 @@ p {
     cursor: pointer;
     transition: 0.5S;
 }
-.login_form form button:hover{
+
+.login_form form button:hover {
     background-color: #ef729d;
     padding-left: 25px;
     padding-right: 25px;
     transition: 0.5S;
 }
+
+.copy {
+    color: black;
+    text-align: center;
+    font-size: small;
+}
+
 /*********************************************/
 @media screen and (max-width:750px) {
     .content_box1b {
