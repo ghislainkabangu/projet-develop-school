@@ -484,7 +484,6 @@ p {
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 100px;
 }
 
 .login_box div {
@@ -573,6 +572,7 @@ p {
     color: black;
     text-align: center;
     font-size: small;
+    padding-top: 100px;
 }
 
 /*********************************************/
